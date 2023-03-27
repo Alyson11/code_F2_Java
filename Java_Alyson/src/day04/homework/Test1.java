@@ -22,10 +22,10 @@ public class Test1 {
     public static int[] BubblingSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) { // 外层循环控制循环次数
             for (int j = 0; j < arr.length - i - 1; j++) { // 内层循环进行相邻两个数比较大小
-                if (arr[j] < arr[j + 1]) { // 交换
+                if (arr[j] > arr[j + 1]) { // 交换
                     int tmp = arr[j];
                     arr[j] = arr[j + 1];
-                    arr[j + 1] = arr[j];
+                    arr[j + 1] = tmp;
                 }
             }
         }
